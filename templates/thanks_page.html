@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block thanks_page %}
+
+	<!-- Спасибо -->
+  	<section>
+		{% if name %}
+  		<div class="container">
+  			<CENTER style = 'margin-top: 35%; margin-bottom: 35%;'><h1>Thanks for sending, {{ name }}.
+				Your phone is {{ phone }},
+				Your data is {{ obj.order_dt }}</h1></CENTER>
+  		</div>
+		{% else %}
+		<div class="container">
+  			<CENTER style = 'margin-top: 35%; margin-bottom: 35%;'><h1>Спасибо страница!</h1></CENTER>
+  		</div>
+		{% endif %}
+  	</section>
+  	<!-- Спасибо -->
+{% endblock %}
+
+
